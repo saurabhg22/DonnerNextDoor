@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body
+{
+background-image:url("C:/Users/Harshit Home/Desktop/pro/images/pic5.jpg");
+background-repeat:no-repeat;
+
+}
+
+select
+{
+height: 50px;
+    width: 50%;
+}
+
+</style>
+
+<meta charset="utf-8">
+<title>donorNEXTDoor :: Welcome</title>
+<link rel="shortcut icon" href="images/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--[if lt IE 9]>
+<script src="js/selectivizr-min.js"></script>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+
+<!-- Header Start here -->
+  <header>
+  <div class="container">
+    <div class="logo"><img src="images/pic1.png" width="100" height="70" alt="iMedicalHub" />
+	<h2 style="color:#ff0000">DONORNEXTDOOR</h2></div>
+
+  </div>
+</header>
+		<div align="center">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <h4><ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Success Stories</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+
+  <div class="fullbanner login">
+  <div class="banner-info">
+    <h1>Register Here</h1>
+	Already have an account? <a href="login.html">Login Now</a>
+  </div>
+</div>
+<form novalidate id="signup" method="post" action="#"  class="iMed-form">
+<div class="registerwith text-center">
+	         <div class="form-group-label">
+          <label>I am &nbsp;</label>
+          <div class="radio-custom radio-inline">
+            <input id="regularuser" name="iama" checked type="radio" data-rel="usernormal">
+            <label for="regularuser">A regular user</label>
+          </div>
+         
+<!--          <div class="radio-custom radio-inline">
+            <input id="others" name="iama" type="radio" data-rel="userother">
+            <label for="others">Others</label>
+          </div> -->         
+        </div>
+</div>
+  
+
+  <div class="rowf">
+  <div class="midwidform"> 
+        
+  <div class="form-group col-md-6 istar">
+    <label class="placelabel" for="FirstName">First Name</label>
+    <input placeholder="First Name" class="form-control showlabel" id="FirstName" name="FirstName" type="text">
+  </div>
+  <div class="form-group col-md-6 istar">
+    <label class="placelabel" for="LastName">Last Name</label>
+    <input class="form-control showlabel" id="LastName" name="LastName" placeholder="Last Name" type="text">
+  </div>
+  <div class="form-group col-md-6 istar">
+    <label class="placelabel" for="email">Email</label>
+    <input class="form-control showlabel" id="email" name="email" placeholder="Email" type="email">
+  </div>
+  <div class="form-group col-md-6 istar">
+    <label class="placelabel" for="mobile">Mobile</label>
+    <input class="form-control showlabel" id="mobile" name="mobile" placeholder="Mobile" type="tel">
+  </div>
+  
+    <div class="form-group col-lg-6 istar">
+    <label class="placelabel" for="mobile">Address</label>
+    <input class="form-control showlabel" id="address" name="address" placeholder="Address" type="address">
+  <br><br>
+  <select>
+  <option value="volvo">Donor</option>
+  <option value="saab">Recepient</option>
+ 
+</select>
+<br><br>
+
+ 
+  
+  
+
+  
+  <img src="images/avatar.jpg" alt="face" height="150" width="160"><hr>
+  <button type="button">Upload Photo</button>
+  <br>
+  <br>
+  <br>
+	<br>
+  <textarea rows="1" cols="30" placeholder="Upload certificate 1">
+</textarea>
+<br>
+
+ <button type="upload1" style="height:30px; width:80px" >Upload</button> 
+<br><br>
+
+  <textarea rows="1" cols="30" placeholder="Upload certificate 2">
+</textarea>
+<br>
+
+ <button type="upload2" style="height:30px; width:80px" >Upload</button> 
+
+ <br><br>
+   <textarea rows="1" cols="30" placeholder="Upload certificate 3">
+</textarea>
+<br>
+
+ <button type="upload4" style="height:30px; width:80px" >Upload</button> 
+ <br><br>
+   <textarea rows="1" cols="30" placeholder="Upload certificate 4">
+</textarea>
+<br>
+
+ <button type="upload3" style="height:30px; width:80px" >Upload</button> 
+  <br><br>
+   <textarea rows="1" cols="30" placeholder="Upload certificate 5">
+</textarea>
+<br>
+
+ <button type="upload5" style="height:30px; width:80px" >Upload</button> 
+ 
+ 
+  <div class="col-md-12 text-center">
+  <br>
+    <button type="submit" class="btn btn-primary text-center loginbtn" name="submit">Register</button>
+  </div>        
+
+        
+        
+
+          
+
+
+
+  <!-- Core  -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/theme-function.js"></script>  
+  
+<!-- ############## Page function ############### -->
+
+<script>  
+$(document).ready(function(e) {			
+$(document).on('click', 'input[name="iama"]', function(){
+	if($(this).is(':checked')) {
+		    var getUserType = $(this).attr('data-rel');		
+			if(getUserType == 'userdoctor'){
+				$("#userdoctor").show();
+			}else{
+				$("#userdoctor").hide();
+			}
+	}
+	})			
+
+});
+
+</script>
+  
+</body>
+</html>
